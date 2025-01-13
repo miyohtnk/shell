@@ -42,9 +42,9 @@ rm raw/*ipaddr* processed/user_logs/*ipaddr*
 rf -rf ./data
 
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
-cat processed/server_logs/* >> inventory.txt
-cat processed/user_logs/* >> inventory.txt
-cat processed/event_logs/* >> inventory.txt
+ls processed/server_logs/ >> inventory.txt
+ls processed/user_logs/ >> inventory.txt
+ls processed/event_logs/ >> inventory.txt
 
 ###########################################
 
